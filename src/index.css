@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --grid-cols-70-30: 70% 28%;
+
+  --color-white: initial;
+  --color-orange: hsla(28, 96%, 69%, 1);
+  --color-green: hsla(160, 100%, 37%, 1);
+  --color-white: hsl(60, 89%, 96%);
+  --color-yellow: hsl(60, 91%, 54%);
+  --color-teal: hsl(169, 76%, 73%);
+  --color-blue: hsl(207, 91%, 60%);
+  --color-black: hsl(63, 61%, 7%);
+}
+
+@layer base {
+  body {
+    @apply bg-white;
+  }
+}
