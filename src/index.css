@@ -1,21 +1,28 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'Sigmar';
+  src: url('./assets/fonts/sigmarone.woff2') format('woff2'),
+    url('./assets/fonts/sigmarone.woff') format('woff');
+  font-weight: normal;
+  /* font-style: normal; */
+  font-display: swap;
+}
+
 @theme {
+  --font-heading: 'Sigmar', sans-serif;
   --font-sans: 'Roboto', sans-serif;
   --grid-cols-70-30: 70% 28%;
 
-  --color-white: initial;
-  --color-orange: hsla(28, 96%, 69%, 1);
-  --color-green: hsla(160, 100%, 37%, 1);
-  --color-white: hsl(60, 89%, 96%);
-  --color-yellow: hsl(60, 91%, 54%);
-  --color-teal: hsl(169, 76%, 73%);
-  --color-blue: hsl(207, 91%, 60%);
-  --color-black: hsl(63, 61%, 7%);
+  --color-red: hsl(3, 79%, 56%);
+  --color-cream: hsl(60, 89%, 96%);
+  --color-yellow: hsl(35, 100%, 55%);
+  --color-green: hsl(144, 44%, 72%);
+  --color-black: hsl(300, 6%, 3%);
 }
 
 @layer base {
   body {
-    @apply bg-white;
+    @apply bg-cream text-black font-sans;
   }
 }
