@@ -1,19 +1,24 @@
 import heroImage from '../assets/images/hero-image.png';
 
-const Hero = () => {
+const Hero = ({
+  title = "Mi'Kadi",
+  subtitle = 'Les meilleures affaires de l’île, partagées par vous !',
+}) => {
   return (
-    <header className="flex overflow-hidden py-16 px-4 items-center justify-between max-w-7x container mx-auto ">
-      <h1 className="text-7xl font-bold text-green max-w-lg">
-        Mi Kadi
-        <span className="block text-3xl font-normal text-black/70 mt-4">
-          Les meilleures affaires de l’île, partagées par vous !
-        </span>
-      </h1>
-      <img
-        src={heroImage}
-        alt="Panier avec fruits et légumes locaux"
-        className="w-xl h-auto"
-      />
+    <header className="container max-w-6xl mx-auto">
+      <div className="grid py-16 px-4 items-center justify-between w-full">
+        <h1 className="text-6xl font-heading text-black max-w-lg">
+          {title}
+          <span className="block text-xl font-sans font-normal text-orange-500 mt-4">
+            {subtitle}
+          </span>
+        </h1>
+        <img
+          src={heroImage}
+          alt="Panier avec fruits et légumes locaux"
+          className="w-64 h-auto my-13 justify-self-center"
+        />
+      </div>
       {/* <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-accent/5 to-secondary/5"></div>
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">

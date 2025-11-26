@@ -1,32 +1,32 @@
-import logo from '../assets/images/logo.png';
+import React from 'react';
+import logo from '../assets/images/logo.svg';
 
 const NavBar = () => {
   // const [isOpen, setIsOpen] = React.useState(false);
 
   const navItems = [
-    { label: 'Accueil', href: '#' },
-    { label: 'Promotions', href: '#promotions' },
-    { label: 'À propos', href: '#about' },
+    { label: 'Bon plans', href: '#bonplans' },
     { label: 'Contact', href: '#contact' },
+    { label: 'Poster', href: '#poster' },
   ];
   return (
-    <nav className="sticky top-0 z-100 w-screen bg-white/95 backdrop-blur">
+    <nav className="sticky top-0 z-100 w-screen bg-cream/95 backdrop-blur">
       <div className="container mx-auto w-full px-4">
-        <div className="flex h-16 items-center justify-between">
-          <a href="/" className="inline-flex items-center gap-3 me-auto">
-            <img src={logo} alt="Mi Kadi" className="size-10" />
-            <span className="text-xl font-bold bg-linear-to-r bg-clip-text text-black">
-              Mi Kadi
+        <div className="flex shrink-0 items-center ">
+          <a href="/" className="align-center gap-3 me-auto">
+            <img src={logo} alt="Mi Kadi" className="w-16 h-auto p-2" />
+            <span className="hidden md:block text-xl font-heading self-end bg-linear-to-r bg-clip-text text-black">
+              Mi'Kadi
             </span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="inline-flex gap-8">
+          <div className="hidden gap-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-lg px-1.5 font-medium text-black/80 hover:text-orange-500 hover:font-bold transition-colors">
+                className="text-lg px-1.5 font-medium text-black/80 hover:text-red-800 hover:font-bold transition-colors">
                 {item.label}
               </a>
             ))}
