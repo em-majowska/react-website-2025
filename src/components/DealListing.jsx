@@ -3,23 +3,24 @@ import React from 'react';
 const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
   return (
     <div
-      class={`${bg} relative p-4 grid grid-cols-(--grid-cols-40-60) justify-between rounded-l-xl rounded-b-xl  shadow-md border-2 border-orange-50  sm:border-orange-200 max-w-md m-auto`}>
+      class={`${bg} relative p-4 grid grid-cols-(--grid-cols-40-60) justify-between rounded-l-xl rounded-b-xl shadow-md border-2 border-orange-50 sm:border-orange-200 max-w-md m-auto h-full`}>
       <div
-        className={`absolute -top-7 -right-0.5 ${bg} rounded-full border-2 border-orange-50 sm:border-orange-200 text-orange-500 text-lg font-bold p-2 size-14 place-content-center text-center`}>
+        className={`absolute -top-7 -right-0.5 ${bg} rounded-full border-2 border-orange-50 sm:border-orange-200 text-orange-500 text-lg font-bold p-1 size-14 place-content-center text-center leading-none`}>
         {deal.likes}
+        <i className="relative -top-2 ml-0.5 fa fa-heart text-[9px]"></i>
       </div>
       <img src={deal.imageSrc} className="object-cover rounded-md min-h-full" />
-      <div className="w-full">
+      <div className="w-full flex flex-col justify-between">
         <div>
           <p className="text-xs text-gray-600">{deal.type}</p>
-          <h3 className="text-xl font-bold">Mangue josé</h3>
+          <h3 className="text-xl font-bold">{deal.title}</h3>
         </div>
 
         <p className="font-bold text-xl text-orange-600 mb-2">{deal.price}</p>
 
-        <div className="mb-2">
-          <p className="text-sm">{deal.location}</p>
-          <p className="text-black  font-bold uppercase">{deal.shop}</p>
+        <div className="mb-2 text-sm">
+          <p>{deal.location}</p>
+          <p className="text-black font-bold uppercase">{deal.shop}</p>
         </div>
 
         <div className="flex justify-between align-center gap-3">
