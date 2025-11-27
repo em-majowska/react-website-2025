@@ -1,23 +1,31 @@
 import heroImage from '../assets/images/hero-image.png';
+import Input from './Input.jsx';
 
 const Hero = ({
-  title = "Mi'Kadi",
+  title = (
+    <>
+      <span className="text-black">Mi'</span>Kadi
+    </>
+  ),
   subtitle = 'Les meilleures affaires de l’île, partagées par vous !',
 }) => {
   return (
-    <header className="container max-w-6xl mx-auto">
-      <div className="grid py-16 px-4 items-center justify-between w-full">
-        <h1 className="text-6xl font-heading text-black max-w-lg">
+    <header className="w-screen bg-linear-0 from-background from-30% to-white">
+      <div className="grid py-10 px-4 items-center justify-between ">
+        <h1 className="text-6xl font-heading text-orange-600 max-w-lg">
           {title}
-          <span className="block text-xl font-sans font-normal text-orange-500 mt-4">
+          <span className="block text-xl font-sans font-normal text-black mt-4">
             {subtitle}
           </span>
         </h1>
         <img
           src={heroImage}
           alt="Panier avec fruits et légumes locaux"
-          className="w-64 h-auto my-13 justify-self-center"
+          className="w-64 h-auto mt-13 justify-self-center"
         />
+      </div>
+      <div className="p-15 h-20 grid place-content-center w-full bg-orange-500 rounded-t-4xl">
+        <Input placeholder="Rechercher un bon plan..." />
       </div>
       {/* <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-accent/5 to-secondary/5"></div>
       <div className="container mx-auto relative z-10">
