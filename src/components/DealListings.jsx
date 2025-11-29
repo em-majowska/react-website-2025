@@ -1,6 +1,6 @@
 import React from 'react';
 import DealListing from './DealListing';
-import deals from '.././deals.json';
+import deals from '../data/deals.json';
 
 const DealListings = () => {
   const recentDeals = deals.slice(0, 3);

@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Sigmar';
-  src: url('./assets/fonts/sigmarone.woff2') format('woff2'),
-    url('./assets/fonts/sigmarone.woff') format('woff');
+  src: url('/assets/fonts/sigmarone.woff2') format('woff2'),
+    url('/assets/fonts/sigmarone.woff') format('woff');
   font-weight: normal;
   font-display: swap;
 }
@@ -11,7 +11,7 @@
 @theme {
   --font-heading: 'Sigmar', sans-serif;
   --font-sans: 'Roboto', sans-serif;
-  --grid-cols-70-30: 70% 28%;
+
   --grid-cols-40-60: 40% 55%;
   --color-background: hsl(54, 90%, 89%);
 
