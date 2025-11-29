@@ -1,5 +1,4 @@
 import heroImage from '../assets/images/hero-image.png';
-import Input from './Input.jsx';
 
 const Hero = ({
   title = (
@@ -11,22 +10,20 @@ const Hero = ({
 }) => {
   return (
     <header className="w-screen bg-linear-0 from-background from-30% to-white">
-      <div className="grid py-10 px-4 items-center justify-between ">
-        <h1 className="text-6xl font-heading text-orange-600 max-w-lg">
+      <div className="container m-auto grid py-10 px-4 items-center justify-between sm:grid-cols-2 sm:justify-around sm:max-w-2xl">
+        <h1 className="text-6xl font-heading text-orange-600">
           {title}
-          <span className="block text-xl font-sans font-normal text-black mt-4">
+          <span className="block text-xl font-sans font-normal text-black mt-4 sm:max-w-[30ch]">
             {subtitle}
           </span>
         </h1>
         <img
           src={heroImage}
           alt="Panier avec fruits et légumes locaux"
-          className="w-64 h-auto mt-13 justify-self-center"
+          className="w-64 h-auto mt-13 justify-self-end"
         />
       </div>
-      <div className="p-15 h-20 grid place-content-center w-full bg-orange-500 rounded-t-4xl">
-        <Input placeholder="Rechercher un bon plan..." />
-      </div>
+
       {/* <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-accent/5 to-secondary/5"></div>
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">

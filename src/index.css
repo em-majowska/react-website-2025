@@ -13,16 +13,17 @@
   --font-heading: 'Sigmar', sans-serif;
   --font-sans: 'Roboto', sans-serif;
   --grid-cols-70-30: 70% 28%;
-
-  --color-red: hsl(3, 79%, 56%);
-  --color-cream: hsl(60, 89%, 96%);
-  --color-yellow: hsl(35, 100%, 55%);
-  --color-green: hsl(144, 44%, 72%);
-  --color-black: hsl(300, 6%, 3%);
+  --grid-cols-40-60: 40% 55%;
+  --color-background: hsl(54, 90%, 89%);
 }
 
 @layer base {
   body {
-    @apply bg-cream text-black font-sans;
+    @apply bg-white text-black font-sans;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-gray-900/60;
   }
 }

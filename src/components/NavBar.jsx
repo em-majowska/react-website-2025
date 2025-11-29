@@ -10,11 +10,11 @@ const NavBar = () => {
     { label: 'Poster', href: '#poster' },
   ];
   return (
-    <nav className="sticky top-0 z-100 w-screen bg-cream/95 backdrop-blur">
-      <div className="container mx-auto w-full px-4">
+    <nav className="sticky top-0 z-100 w-screen bg-white/95 backdrop-blur">
+      <div className="container mx-auto w-full px-4 sm:p-0">
         <div className="flex shrink-0 items-center ">
           <a href="/" className="align-center gap-3 me-auto">
-            <img src={logo} alt="Mi Kadi" className="w-16 h-auto p-2" />
+            <img src={logo} alt="Mi Kadi" className="w-12 h-auto py-2" />
             <span className="hidden md:block text-xl font-heading self-end bg-linear-to-r bg-clip-text text-black">
               Mi'Kadi
             </span>
