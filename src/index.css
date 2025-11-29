@@ -14,7 +14,6 @@
 
   --grid-cols-40-60: 40% 55%;
   --color-background: hsl(54, 90%, 89%);
-
   --animate-wiggle: wiggle 0.3s ease-in-out infinite;
   @keyframes wiggle {
     0%,
