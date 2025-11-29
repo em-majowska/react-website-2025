@@ -9,18 +9,18 @@ const Hero = ({
   subtitle = 'Les meilleures affaires de l’île, partagées par vous !',
 }) => {
   return (
-    <header className="w-screen bg-linear-0 from-background from-30% to-white">
-      <div className="container m-auto grid py-10 px-4 items-center justify-between sm:grid-cols-2 sm:justify-around sm:max-w-2xl">
-        <h1 className="text-6xl font-heading text-orange-600">
+    <header className="w-screen bg-linear-0 from-background to-white">
+      <div className="container m-auto grid py-10 px-4 items-center justify-between sm:grid-cols-2 sm:justify-around max-w-5xl">
+        <h1 className="text-6xl md:text-8xl font-heading text-orange-600">
           {title}
-          <span className="block text-xl font-sans font-normal text-black mt-4 sm:max-w-[30ch]">
+          <span className="block text-xl md:text-2xl font-sans font-normal text-black mt-4 sm:max-w-[30ch]">
             {subtitle}
           </span>
         </h1>
         <img
           src={heroImage}
           alt="Panier avec fruits et légumes locaux"
-          className="w-64 h-auto mt-13 justify-self-end"
+          className="w-sm md:w-lg mt-13 justify-self-end"
         />
       </div>
 

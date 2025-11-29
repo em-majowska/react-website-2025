@@ -11,11 +11,11 @@ const NavBar = () => {
   ];
   return (
     <nav className="sticky top-0 z-100 w-screen bg-white/95 backdrop-blur">
-      <div className="container mx-auto w-full px-4 sm:p-0">
+      <div className="container mx-auto w-full px-4 lg:p-0 max-w-5xl">
         <div className="flex shrink-0 items-center ">
-          <a href="/" className="align-center gap-3 me-auto">
+          <a href="/" className="flex align-center gap-3 me-auto">
             <img src={logo} alt="Mi Kadi" className="w-12 h-auto py-2" />
-            <span className="hidden md:block text-xl font-heading self-end bg-linear-to-r bg-clip-text text-black">
+            <span className="hidden md:block text-2xl mb-1 font-heading self-end bg-linear-to-r bg-clip-text text-black">
               Mi'Kadi
             </span>
           </a>
