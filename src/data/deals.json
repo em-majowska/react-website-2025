@@ -7,7 +7,7 @@
     "shop": "Leader Price",
     "location": "Saint-Leu",
     "price": "3.99€/kg",
-    "likes": "97°"
+    "likes": "97"
   },
   {
     "id": "2",
@@ -17,7 +17,7 @@
     "shop": "L'Étal centre-ville",
     "location": "Saint-Leu",
     "price": "1.99€/kg",
-    "likes": "120°"
+    "likes": "120"
   },
   {
     "id": "3",
@@ -27,7 +27,7 @@
     "shop": "RunMarket",
     "location": "Saint-Paul",
     "price": "9.99€",
-    "likes": "54°"
+    "likes": "54"
   },
   {
     "id": "4",
@@ -37,7 +37,7 @@
     "shop": "Leclerc",
     "location": "Saint-Pierre",
     "price": "15.99€/kg",
-    "likes": "197°"
+    "likes": "197"
   },
   {
     "id": "5",
@@ -47,7 +47,7 @@
     "shop": "Naturalia",
     "location": "Saint-Pierre",
     "price": "17.99€/kg",
-    "likes": "23°"
+    "likes": "23"
   },
   {
     "id": "6",
@@ -57,6 +57,6 @@
     "shop": "La Vie Claire",
     "location": "Saint-Leu",
     "price": "4.99€",
-    "likes": "10°"
+    "likes": "10"
   }
 ]
