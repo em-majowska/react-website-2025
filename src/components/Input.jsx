@@ -6,7 +6,7 @@ const Input = ({ type, placeholder }) => {
       type={type}
       placeholder={placeholder}
       id="site-search"
-      className="rounded-md bg-white p-2 border border-white focus:outline-none focus:ring-2 focus:ring-orange-800 container"
+      className="rounded-md bg-white p-2 border border-white focus:outline-none focus:ring-2 focus:ring-orange-600 container"
     />
   );
 };

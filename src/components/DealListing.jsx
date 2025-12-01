@@ -26,14 +26,14 @@ const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
           <a
             href={`/deal/${deal.id}`}
             title="Voir les détails de l'offre"
-            className="inline-block border-2 h-9 text-sm text-nowrap min-w-min border-orange-200 hover:text-white rounded-lg px-4 py-2 hover:bg-lime-600 hover:border-lime-600 transition-colors">
+            className="inline-block border-2 h-9 text-sm text-nowrap min-w-min border-orange-300 hover:text-white rounded-lg px-4 py-2 hover:bg-lime-600 hover:border-lime-600 transition-colors">
             Voir l'offre
           </a>
           <button
             title="Liker cet offre"
-            className="flex items-center justify-center min-w-9 size-9 border-2 border-orange-200 hover:border-orange-500 transition-colors rounded-lg group hover:cursor-pointer
+            className="flex items-center justify-center min-w-9 size-9 border-2 border-orange-300 hover:border-orange-500 transition-colors rounded-lg group hover:cursor-pointer
                     ">
-            <i className="fa fa-heart text-xl transition-all text-orange-300 group-hover:text-orange-500"></i>
+            <i className="fa fa-heart text-xl transition-all text-orange-400 group-hover:text-orange-500 group-hover:text-2xl group-hover:animate-wiggle"></i>
           </button>
         </div>
       </div>
