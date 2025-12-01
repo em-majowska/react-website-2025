@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Mangues josé",
+    "type": "Fruits et Légumes",
+    "imageSrc": "/react-website-2025/assets/images/deals/mangue-jose.jpg",
+    "shop": "Leader Price",
+    "location": "Saint-Leu",
+    "price": "3.99€/kg",
+    "likes": "97"
+  },
+  {
+    "id": "2",
+    "title": "Litchis pays",
+    "type": "Fruits et Légumes",
+    "imageSrc": "/react-website-2025/assets/images/deals/litchis.jpg",
+    "shop": "L'Étal centre-ville",
+    "location": "Saint-Leu",
+    "price": "1.99€/kg",
+    "likes": "120"
+  },
+  {
+    "id": "3",
+    "title": "Riz 10kg",
+    "type": "Épicerie",
+    "imageSrc": "/react-website-2025/assets/images/deals/riz.jpg",
+    "shop": "RunMarket",
+    "location": "Saint-Paul",
+    "price": "9.99€",
+    "likes": "54"
+  },
+  {
+    "id": "4",
+    "title": "Café Le Lion 1kg",
+    "type": "Épicerie",
+    "imageSrc": "/react-website-2025/assets/images/deals/cafe.jpg",
+    "shop": "Leclerc",
+    "location": "Saint-Pierre",
+    "price": "15.99€/kg",
+    "likes": "197"
+  },
+  {
+    "id": "5",
+    "title": "Noix de cajou",
+    "type": "Vrac",
+    "imageSrc": "/react-website-2025/assets/images/deals/noix.jpg",
+    "shop": "Naturalia",
+    "location": "Saint-Pierre",
+    "price": "17.99€/kg",
+    "likes": "23"
+  },
+  {
+    "id": "6",
+    "title": "Pain complet de seigle et avoine 500g",
+    "type": "Épicerie",
+    "imageSrc": "/react-website-2025/assets/images/deals/pain-complet.jpg",
+    "shop": "La Vie Claire",
+    "location": "Saint-Leu",
+    "price": "4.99€",
+    "likes": "10"
+  }
+]

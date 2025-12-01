@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Sigmar';
+  src: url('/react-website-2025/assets/fonts/sigmarone.woff2') format('woff2'),
+    url('/react-website-2025/assets/fonts/sigmarone.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-heading: 'Sigmar', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+
+  --grid-cols-40-60: 40% 55%;
+  --color-background: hsl(54, 90%, 89%);
+  --animate-wiggle: wiggle 0.3s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-black font-sans;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-gray-900/60;
+  }
+}
