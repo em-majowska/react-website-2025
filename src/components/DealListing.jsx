@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { FaHeart } from 'react-icons/fa';
 
 const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
-  const [likeDeal, setlikeDeal] = useState(false);
+  const [likeDeal, setLikeDeal] = useState(false);
 
   return (
     <div
@@ -9,7 +10,7 @@ const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
       <div
         className={`absolute -top-7 -right-0.5 ${bg} rounded-full border-2 border-orange-50 sm:border-orange-200 text-orange-500 text-lg font-bold p-1 size-14 place-content-center text-center leading-none`}>
         {deal.likes}
-        <i className="relative -top-2 ml-0.5 fa fa-heart text-[9px]"></i>
+        <FaHeart className="inline relative -top-2 ml-0.5 text-[9px]" />
       </div>
       <img src={deal.imageSrc} className="object-cover rounded-md min-h-full" />
       <div className="w-full flex flex-col justify-between">
@@ -41,12 +42,13 @@ const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
                 : 'border-orange-300 bg-transparent'
             }
    hover:border-orange-500 transition-colors rounded-lg group hover:cursor-pointer`}>
-            <i
-              className={`fa fa-heart text-xl transition-all ${
+            <FaHeart
+              className={`text-xl transition-all ${
                 likeDeal
                   ? 'text-white group-hover:text-white'
                   : 'text-orange-400 group-hover:text-orange-500'
-              } group-hover:text-2xl group-hover:animate-wiggle`}></i>
+              } group-hover:text-2xl group-hover:animate-wiggle`}
+            />
           </button>
         </div>
       </div>
