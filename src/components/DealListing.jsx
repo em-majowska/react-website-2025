@@ -1,6 +1,8 @@
-import React from 'react';
+import { useState } from 'react';
 
 const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
+  const [likeDeal, setlikeDeal] = useState(false);
+
   return (
     <div
       class={`${bg} relative p-4 grid grid-cols-(--grid-cols-40-60) justify-between rounded-l-xl rounded-b-xl shadow-md border-2 border-orange-50 sm:border-orange-200 max-w-md m-auto h-full`}>
@@ -31,10 +33,20 @@ const DealListing = ({ deal, bg = 'bg-orange-50' }) => {
             Voir l'offre
           </a>
           <button
+            onClick={() => setLikeDeal((prevState) => !prevState)}
             title="Liker cet offre"
-            className="flex items-center justify-center min-w-9 size-9 border-2 border-orange-300 hover:border-orange-500 transition-colors rounded-lg group hover:cursor-pointer
-                    ">
-            <i className="fa fa-heart text-xl transition-all text-orange-400 group-hover:text-orange-500 group-hover:text-2xl group-hover:animate-wiggle"></i>
+            className={`flex items-center justify-center min-w-9 size-9 border-2 ${
+              likeDeal
+                ? 'border-orange-500 bg-orange-500'
+                : 'border-orange-300 bg-transparent'
+            }
+   hover:border-orange-500 transition-colors rounded-lg group hover:cursor-pointer`}>
+            <i
+              className={`fa fa-heart text-xl transition-all ${
+                likeDeal
+                  ? 'text-white group-hover:text-white'
+                  : 'text-orange-400 group-hover:text-orange-500'
+              } group-hover:text-2xl group-hover:animate-wiggle`}></i>
           </button>
         </div>
       </div>
