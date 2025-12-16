@@ -1,34 +1,39 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '/assets/images/logo.svg';
 
 const NavBar = () => {
   // const [isOpen, setIsOpen] = React.useState(false);
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? 'text-orange-600 text-md px-3 py-2 font-bold rounded-lg transition-all'
+      : 'text-black/80 text-md px-3 py-2 font-bold rounded-lg transition-all hover:bg-orange-400 hover:text-white';
 
   const navItems = [
-    { label: 'Bon plans', href: '#bonplans' },
-    { label: 'Contact', href: '#contact' },
-    { label: 'Poster', href: '#poster' },
+    { label: 'Home', href: '/' },
+    { label: 'Bon plans', href: '/deals' },
+    { label: 'Contact', href: '/contact' },
+    {
+      label: 'Poster',
+      href: '/poster',
+    },
   ];
   return (
     <nav className="sticky top-0 z-100 w-screen bg-white/95 backdrop-blur">
       <div className="container mx-auto w-full px-4 lg:p-0 max-w-5xl">
-        <div className="flex shrink-0 items-center ">
-          <a href="/" className="flex align-center gap-3 me-auto">
-            <img src={logo} alt="Mi Kadi" className="w-12 h-auto py-2" />
+        <div className="flex shrink-0 items-end ">
+          <NavLink to="/" className="flex align-center gap-3 me-auto">
+            <img src={logo} alt="Mi Kadi" className="w-11 h-auto py-2" />
             <span className="hidden md:block text-2xl mb-1 font-heading self-end bg-linear-to-r bg-clip-text text-black">
               Mi'Kadi
             </span>
-          </a>
+          </NavLink>
 
           {/* Desktop Navigation */}
-          <div className="hidden gap-8">
+          <div className="hidden sm:flex space-x-2 transition-all gap-2">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-lg px-1.5 font-medium text-black/80 hover:text-red-800 hover:font-bold transition-colors">
+              <NavLink key={item.label} to={item.href} className={linkClass}>
                 {item.label}
-              </a>
+              </NavLink>
             ))}
 
             {/* Language Selector */}

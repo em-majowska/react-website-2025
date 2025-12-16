@@ -13,7 +13,7 @@
   --font-sans: 'Roboto', sans-serif;
 
   --grid-cols-40-60: 40% 55%;
-  --color-background: hsl(54, 90%, 89%);
+  --color-background: hsl(44, 89%, 93%);
   --animate-wiggle: wiggle 0.3s ease-in-out infinite;
   @keyframes wiggle {
     0%,
@@ -28,11 +28,11 @@
 
 @layer base {
   body {
-    @apply bg-background text-black font-sans;
+    @apply bg-linear-to-t from-background from-60% to-white text-black font-sans min-h-screen;
   }
 
   input::placeholder,
   textarea::placeholder {
-    @apply text-gray-900/60;
+    @apply text-black/60;
   }
 }
